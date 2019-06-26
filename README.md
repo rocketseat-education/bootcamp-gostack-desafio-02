@@ -8,9 +8,9 @@ Nessa aplicação configure as seguintes ferramentas:
 - ESLint + Prettier + EditorConfig;
 - Sequelize (Utilize PostgresSQL ou MySQL);
 
-Durante esse desafio você dará início ao seu projeto pessoal do Bootcamp, esse projeto será desenvolvido aos poucos até o fim da sua jornada onde você terá uma aplicação completa envolvendo back-end, front-end e mobile.
+Durante esse desafio você dará início a um novo projeto no Bootcamp, esse projeto será desenvolvido aos poucos até o fim da sua jornada onde você terá uma aplicação completa envolvendo back-end, front-end e mobile.
 
-Esse seu projeto pessoal também será utilizado para a certificação do bootcamp, então bora pro código!
+Esse projeto também será utilizado para a certificação do bootcamp, então bora pro código!
 
 ## Aplicação
 
