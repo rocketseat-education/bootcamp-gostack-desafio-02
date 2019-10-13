@@ -28,7 +28,7 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-## Sobre o desafio
+## :rocket: Sobre o desafio
 
 A aplicação que iremos dar início ao desenvolvimento a partir de agora é um app gerenciador de academia, o **Gympoint**.
 
@@ -78,7 +78,7 @@ Para atualizar a senha, o usuário deve também enviar um campo de confirmação
 - Criptografe a senha do usuário para segurança.
 - Realize a validação dos dados de entrada;
 
-## Entrega
+## 📅 Entrega
 
 Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do [código do desafio aqui](https://github.com/Rocketseat/bootcamp-gostack-desafio-02). Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
