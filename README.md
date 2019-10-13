@@ -28,31 +28,58 @@ Abaixo estão descritas as funcionalidades que você deve adicionar em sua aplic
 
 Permita que um usuário se autentique em sua aplicação utilizando e-mail e uma senha.
 
+Crie um usuário administrador utilizando a funcionalidade de [seeds do sequelize](https://sequelize.org/master/manual/migrations.html#creating-first-seed), essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
+
+Para criar um seed utilize o comando:
+
+```js
+yarn sequelize seed:generate --name admin-user
+```
+
+No arquivo gerado na pasta `src/database/seeds` adicione o código referente à criação de um usuário administrador:
+
+```js
+const bcrypt = require('bcryptjs');
+
+module.exports = {
+  up: QueryInterface => {
+    return QueryInterface.bulkInsert(
+      'users',
+      [
+        {
+          name: 'Administrador',
+          email: 'admin@gympoint.com',
+          password_hash: bcrypt.hashSync('123456', 8),
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+      ],
+      {}
+    );
+  },
+
+  down: () => {},
+};
+```
+
+Agora execute:
+
+```js
+yarn sequelize db:seed:all
+```
+
+Agora você tem um usuário na sua base de dados, utilize esse usuário para todos logins daqui pra frente.
+
 - A autenticação deve ser feita utilizando JWT.
 - Realize a validação dos dados de entrada;
 
-### Cadastro e atualização de alunos
+### Cadastro de alunos
 
-Permita que novos usuários se cadastrem na aplicação utilizando nome, e-mail, senha e plano.
+Permita que alunos sejam mantidos (cadastrados/atualizados) na aplicação utilizando nome, email, idade, peso e altura.
 
-O plano corresponde quantos dias da semana o aluno irá frequentar a academia, utilize os valores abaixo:
+Utilize uma nova tabela no banco de dados chamada `students`.
 
-- `start`: Plano inicial (até 2 dias por semana);
-- `gold`: Plano gold (até 4 dias por semana);
-- `diamond`: Plano diamante (ilimitado);
-
-Obs.: No sequelize temos um tipo de campo que se chama ENUM que força que um campo tenha apenas valores pré-determinados:
-
-```js
-plan: Sequelize.ENUM('start', 'gold', 'diamond')
-```
-
-O plano **não é um valor obrigatório** no banco de dados já que administradores da plataforma não terão tal informação;
-
-Para atualizar a senha, o usuário deve também enviar um campo de confirmação com a mesma senha.
-
-- Criptografe a senha do usuário para segurança.
-- Realize a validação dos dados de entrada;
+O cadastro de alunos só pode ser feito por usuários autenticados na aplicação.
 
 ## Entrega
 
