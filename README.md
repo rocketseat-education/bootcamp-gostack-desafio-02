@@ -1,4 +1,6 @@
-# Desafio 02. Iniciando aplicação Gympoint
+<h1 align="center">
+  <img alt="Gympoint" title="Gympoint" src=".github/logo.png" width="200px" />
+</h1>
 
 Crie uma aplicação do zero utilizando Express.
 
