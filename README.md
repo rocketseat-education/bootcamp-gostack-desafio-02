@@ -61,26 +61,26 @@ yarn sequelize seed:generate --name admin-user
 No arquivo gerado na pasta `src/database/seeds` adicione o código referente à criação de um usuário administrador:
 
 ```js
-const bcrypt = require('bcryptjs');
+const bcrypt = require("bcryptjs");
 
 module.exports = {
   up: QueryInterface => {
     return QueryInterface.bulkInsert(
-      'users',
+      "users",
       [
         {
-          name: 'Administrador',
-          email: 'admin@gympoint.com',
-          password_hash: bcrypt.hashSync('123456', 8),
+          name: "Administrador",
+          email: "admin@gympoint.com",
+          password_hash: bcrypt.hashSync("123456", 8),
           created_at: new Date(),
-          updated_at: new Date(),
-        },
+          updated_at: new Date()
+        }
       ],
       {}
     );
   },
 
-  down: () => {},
+  down: () => {}
 };
 ```
 
@@ -105,7 +105,7 @@ O cadastro de alunos só pode ser feito por usuários autenticados na aplicaçã
 
 ## 📅 Entrega
 
-Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do [código do desafio aqui](https://github.com/Rocketseat/bootcamp-gostack-desafio-02). Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
+Esse desafio **não precisa ser entregue** e não receberá correção. Além disso, o código fonte **não está disponível** por fazer parte do **desafio final**, que será corrigido para **certificação** do bootcamp. Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
 ## :memo: Licença
 
