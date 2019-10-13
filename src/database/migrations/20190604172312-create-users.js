@@ -16,6 +16,9 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      plan: {
+        type: Sequelize.ENUM('start', 'gold', 'diamond'),
+      },
       password_hash: {
         type: Sequelize.STRING,
         allowNull: false,
