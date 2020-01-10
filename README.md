@@ -6,6 +6,10 @@
   Desafio 2: Gympoint, o início
 </h3>
 
+<h4 align="center">
+  Etapa 1/4 do Desafio Final
+</h4>
+
 <blockquote align="center">“Não espere para plantar, apenas tenha paciência para colher”!</blockquote>
 
 <p align="center">
