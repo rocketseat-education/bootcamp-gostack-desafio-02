@@ -72,7 +72,7 @@ No arquivo gerado na pasta `src/database/seeds` adicione o código referente �
           "users",
           [
             {
-              name: "Distruidora FastFeet",
+              name: "Distribuidora FastFeet",
               email: "admin@fastfeet.com",
               password_hash: bcrypt.hashSync("123456", 8),
               created_at: new Date(),
