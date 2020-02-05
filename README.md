@@ -56,7 +56,7 @@ Abaixo estão descritas as funcionalidades que você deve adicionar em sua aplic
 
 Permita que um usuário se autentique em sua aplicação utilizando e-mail e uma senha.
 
-Crie um usuário administrador utilizando a funcionalidade de [seeds do sequelize](https://sequelize.org/master/manual/migrations.html#creating-first-seed), essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
+Crie um usuário administrador utilizando a funcionalidade de [seeds do sequelize](https://sequelize.org/master/manual/migrations.html#creating-the-first-seed), essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
 
 Para criar um seed utilize o comando:
 
