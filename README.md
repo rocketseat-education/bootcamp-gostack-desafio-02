@@ -99,7 +99,7 @@ Agora você tem um usuário na sua base de dados, utilize esse usuário para tod
 
 Você agora precisa permitir que destinatários sejam mantidos (cadastrados/atualizados) na aplicação, e esses devem ter o **nome** do destinatário e campos de endereço: **rua**, **número**, **complemento**, **estado**, **cidade** e **CEP**.
 
-Utilize uma nova tabela no banco de dados chamada `recipient` para guardar informações do destinatário.
+Utilize uma nova tabela no banco de dados chamada `recipients` para guardar informações do destinatário.
 
 O cadastro de destinatários só pode ser feito por administradores autenticados na aplicação.
 
